@@ -70,7 +70,7 @@
 			});
 
 			socket.on('new message',function(data){
-				$chat.append('<strong>'+data.user+' :</strong>'+'<div class="well">'+ data.msg+'</div>');
+				$chat.prepend('<strong>'+data.user+' :</strong>'+'<div class="well">'+ data.msg+'</div>');
 			});
 
 			$userForm.submit(function(e){
